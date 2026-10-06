@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,7 @@
     <title>TaskMitra - Reminder & Task App</title>
 
     <meta name="description"
-          content="TaskMitra is a simple Android reminder and task management app. Download TaskMitra APK.">
+        content="TaskMitra is a simple Android reminder and task management app. Download TaskMitra APK.">
 
     <style>
         * {
@@ -20,20 +21,18 @@
             font-family: Arial, sans-serif;
             background: linear-gradient(135deg, #667eea, #764ba2);
             min-height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 25px;
+            padding: 25px 15px;
         }
 
         .container {
             width: 100%;
             max-width: 700px;
+            margin: auto;
             background: white;
             border-radius: 25px;
             padding: 45px 30px;
             text-align: center;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
         }
 
         .logo {
@@ -42,11 +41,11 @@
             margin: 0 auto 20px;
             border-radius: 22px;
             background: linear-gradient(135deg, #667eea, #764ba2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
             color: white;
-            font-size: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 38px;
             font-weight: bold;
         }
 
@@ -57,67 +56,93 @@
         }
 
         .tagline {
-            font-size: 19px;
-            color: #666;
-            margin-bottom: 30px;
+            font-size: 20px;
+            color: #555;
+            margin-bottom: 40px;
         }
 
         .download-btn {
             display: inline-block;
-            background: #4CAF50;
+            background: #4caf50;
             color: white;
             text-decoration: none;
-            padding: 17px 35px;
-            border-radius: 50px;
             font-size: 20px;
             font-weight: bold;
-            margin: 15px 0 30px;
+            padding: 18px 35px;
+            border-radius: 50px;
+            margin-bottom: 45px;
+            transition: 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: scale(1.04);
+            background: #43a047;
         }
 
         .section {
-            margin-top: 30px;
-            text-align: left;
+            margin-top: 10px;
         }
 
-        .section h2 {
+        h2 {
             color: #333;
-            margin-bottom: 15px;
-            text-align: center;
+            font-size: 27px;
+            margin-bottom: 20px;
         }
 
         .features {
             list-style: none;
+            text-align: left;
         }
 
         .features li {
-            padding: 12px;
-            margin: 8px 0;
             background: #f5f5f5;
-            border-radius: 10px;
+            padding: 14px 18px;
+            margin: 10px 0;
+            border-radius: 12px;
             color: #444;
+            font-size: 17px;
         }
 
         .install {
+            margin-top: 40px;
+            padding: 25px;
             background: #f8f8f8;
-            padding: 20px;
             border-radius: 15px;
-            line-height: 1.7;
-            color: #555;
+            text-align: left;
         }
 
-        .footer {
-            margin-top: 35px;
-            color: #888;
+        .install h2 {
+            text-align: center;
+        }
+
+        .install p {
+            margin: 12px 0;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 40px;
+            color: #777;
             font-size: 14px;
         }
 
-        @media (max-width: 500px) {
+        @media (max-width: 600px) {
+            .container {
+                padding: 35px 20px;
+            }
+
             h1 {
                 font-size: 34px;
             }
 
-            .container {
-                padding: 35px 20px;
+            .tagline {
+                font-size: 17px;
+            }
+
+            .download-btn {
+                font-size: 17px;
+                padding: 16px 25px;
             }
         }
     </style>
@@ -125,61 +150,100 @@
 
 <body>
 
-<div class="container">
+    <div class="container">
 
-    <div class="logo">
-        TM
-    </div>
+        <div class="logo">
+            TM
+        </div>
 
-    <h1>TaskMitra</h1>
+        <h1>TaskMitra</h1>
 
-    <p class="tagline">
-        Your simple and smart reminder & task app.
-    </p>
+        <p class="tagline">
+            Your simple and smart reminder &amp; task app.
+        </p>
 
-    <a class="download-btn"
-       href="https://drive.google.com/file/d/1Q8lUrsyXP7EYzZ_oHe_0zRLRqmodkcOU/view?usp=sharing"
-       target="_blank">
-        📥 Download TaskMitra APK
-    </a>
+        <!-- NEW GOOGLE DRIVE LINK -->
+        <a class="download-btn"
+            href="https://drive.google.com/file/d/1Q8lrUsyXP7EYzZ_oHe_0zRLRqmokdcoU/view?usp=sharing"
+            target="_blank"
+            rel="noopener noreferrer">
+            📥 Download TaskMitra APK
+        </a>
 
-    <div class="section">
+        <div class="section">
 
-        <h2>✨ TaskMitra Features</h2>
+            <h2>✨ TaskMitra Features</h2>
 
-        <ul class="features">
-            <li>⏰ Set reminders for important tasks</li>
-            <li>📝 Manage your daily tasks</li>
-            <li>🔔 Get reminder notifications</li>
-            <li>🎤 Voice input support</li>
-            <li>🌍 Multiple language support</li>
-            <li>📱 Simple and easy-to-use interface</li>
-        </ul>
+            <ul class="features">
 
-    </div>
+                <li>
+                    ⏰ Set reminders for important tasks
+                </li>
 
-    <div class="section">
+                <li>
+                    📝 Manage your daily tasks
+                </li>
 
-        <h2>📲 How to Install</h2>
+                <li>
+                    🔔 Get reminder notifications
+                </li>
 
-        <div class="install">
+                <li>
+                    🎤 Voice input support
+                </li>
 
-            <b>Step 1:</b> Tap the Download button above.<br>
-            <b>Step 2:</b> Download the TaskMitra APK.<br>
-            <b>Step 3:</b> Open the downloaded APK.<br>
-            <b>Step 4:</b> Allow installation if Android asks for permission.<br>
-            <b>Step 5:</b> Tap Install.<br>
-            <b>Step 6:</b> Open TaskMitra and start using it.
+                <li>
+                    🌍 Multiple language support
+                </li>
+
+                <li>
+                    📱 Simple and easy-to-use interface
+                </li>
+
+            </ul>
 
         </div>
 
-    </div>
+        <div class="install">
 
-    <div class="footer">
-        © 2026 TaskMitra. All rights reserved.
-    </div>
+            <h2>📱 How to Install</h2>
 
-</div>
+            <p>
+                <strong>1.</strong>
+                Click the
+                <strong>Download TaskMitra APK</strong>
+                button above.
+            </p>
+
+            <p>
+                <strong>2.</strong>
+                Download the APK file from Google Drive.
+            </p>
+
+            <p>
+                <strong>3.</strong>
+                Open the downloaded APK on your Android phone.
+            </p>
+
+            <p>
+                <strong>4.</strong>
+                If Android asks for permission to install
+                unknown apps, allow it.
+            </p>
+
+            <p>
+                <strong>5.</strong>
+                Install TaskMitra and start using the app.
+            </p>
+
+        </div>
+
+        <footer>
+            © 2026 TaskMitra. All rights reserved.
+        </footer>
+
+    </div>
 
 </body>
+
 </html>
